@@ -64,6 +64,7 @@
                         <div class="form-group">
                             {% for choice in question.choice_set.all %}
                             <div class="form-check">
+                                {{choice.choice.text}}
                                 <label class="form-check-label">
                                     <input type="checkbox" name="choice_{{choice.id}}"
                                            class="form-check-input" id="{{choice.id}}"
